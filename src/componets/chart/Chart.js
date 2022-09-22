@@ -12,7 +12,7 @@ function Chart({name}) {
       data(name);
     }, 15000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [name]);
 
   const data = async (value) => {
     await fetch(`https://api.factoryfour.com/${value}/health/status`)
