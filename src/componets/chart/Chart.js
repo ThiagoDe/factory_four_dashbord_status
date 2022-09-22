@@ -16,6 +16,7 @@ function Chart({request}) {
     return () => clearInterval(intervalId);
   }, [request]);
 
+  
   const data = async (value) => {
     await fetch(`https://api.factoryfour.com/${value}/health/status`)
       .then((res) => res.json())

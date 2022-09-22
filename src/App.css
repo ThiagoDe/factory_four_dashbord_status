@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app-title {
+  background-color: #344152;
+  box-shadow: 10px 10px 10px gray;
+  color: white;
+  padding: 16px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 26px;
+  border-bottom: 4px solid rgb(184, 184, 184);
 }
