@@ -2,17 +2,18 @@ import React from 'react';
 import './chart.css';
 import { useState, useEffect } from "react";
 
-function Chart({name}) {
+function Chart({request}) {
 
   const [dataState, setDataState] = useState()
 
   useEffect(() => {
-    data(name);
+    // console.log(request.toString(), 'here')
+    data(request);
     const intervalId = setInterval(() => {
-      data(name);
+      data(request);
     }, 15000);
     return () => clearInterval(intervalId);
-  }, [name]);
+  }, [request]);
 
   const data = async (value) => {
     await fetch(`https://api.factoryfour.com/${value}/health/status`)
@@ -30,8 +31,9 @@ function Chart({name}) {
 
 
   return (
-    <div className='card-container'>
-      <h2 className='card-name'>{name.toString().toUpperCase()}</h2>
+    <div className='chart-container'>
+      
+      <h2 className='chart-name'>{request.toString().toUpperCase()}</h2>
       <h3 className={dataState?.success ? "card-healthy" : "card-error"}>{dataState?.success ? "Healthy" : "Error"}</h3>
       <h4 className={dataState?.success ? "card-healthy-hostname" : "card-error-hostname"}>{dataState?.success ? dataState.hostname : "OUTAGE"}</h4>
       <h4 className={dataState?.success ? "card-healthy-time" : "card-error-time"}>{dataState?.success ? actualTime : "403 Forbidden"}</h4>

@@ -7,9 +7,9 @@ function Dashboard({ requests }) {
 
   return (
     <div className="dashboard-container">
-      {requests?.map((el, index) => {
+      {requests?.map((request, index) => {
         return (
-          <Chart name={el} key={index} />
+          <Chart request={request} key={index} />
         )
       })}
     </div>
