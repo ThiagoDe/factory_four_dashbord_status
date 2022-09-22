@@ -6,6 +6,8 @@ function Chart({request}) {
 
   const [apistate, setApistate] = useState()
 
+  // Set time interval between API call status requests in miliseconds
+  // e.g 10s => 10000, 15s => 15000, 30s => 30000 ...
   useEffect(() => {
     data(request);
     const intervalId = setInterval(() => {
