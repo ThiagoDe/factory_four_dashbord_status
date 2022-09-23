@@ -7,8 +7,10 @@ function App() {
   
   return (
     <div className="App">
-      <h1 className='app-title'>Status Dashboard - FactoryFour APIs</h1>
-      <Dashboard requests={requests} />
+      <body>
+        <h1 className='app-title'>Status Dashboard - FactoryFour APIs</h1>
+        <Dashboard requests={requests} />
+      </body>
     </div>
   );
 }

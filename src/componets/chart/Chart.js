@@ -32,15 +32,32 @@ function Chart({request}) {
   let actualTime = calculateTime(apistate?.time)
 
 
-  return (
-    <div className='chart-container'>
+  // return (
+  //   <div className='chart-container'>
       
-      <h2 className='chart-name'>{request.toString().toUpperCase()}</h2>
-      <h3 className={apistate?.success ? "chart-healthy" : "chart-error"}>{apistate?.success ? "Healthy" : "Error"}</h3>
-      <h4 className={apistate?.success ? "chart-healthy-hostname" : "chart-error-hostname"}>{apistate?.success ? 'Host Name' + apistate.hostname : "MAJOR OUTAGE"}</h4>
-      <h4 className={apistate?.success ? "chart-healthy-time" : "chart-error-time"}>{apistate?.success ? 'Last Checked at ' + actualTime : "403 Forbidden"}</h4>
-    </div>
+  //     <h2 className='chart-name'>{request.toString().toUpperCase()}</h2>
+  //     <h3 className={apistate?.success ? "chart-healthy" : "chart-error"}>{apistate?.success ? "Healthy" : "Error"}</h3>
+  //     <h4 className={apistate?.success ? "chart-healthy-hostname" : "chart-error-hostname"}>{apistate?.success ? 'Host Name' + apistate.hostname : "MAJOR OUTAGE"}</h4>
+  //     <h4 className={apistate?.success ? "chart-healthy-time" : "chart-error-time"}>{apistate?.success ? 'Last Checked at ' + actualTime : "403 Forbidden"}</h4>
+  //   </div>
+  // )   
+  return (
+    <tr className='chart-container'>
+      
+      <th className='chart-name'>{request.toString().toUpperCase()}</th>
+      <th className={apistate?.success ? "chart-healthy" : "chart-error"}>{apistate?.success ? "Healthy" : "Error"}</th>
+      <th className={apistate?.success ? "chart-healthy-hostname" : "chart-error-hostname"}>{apistate?.success ?  apistate.hostname : "MAJOR OUTAGE"}</th>
+      <th className={apistate?.success ? "chart-healthy-time" : "chart-error-time"}>{apistate?.success ? actualTime : "403 Forbidden"}</th>
+    </tr>
   )   
 }
+
+//           <tr>
+//               <th>Name</th>
+//               <th>Address</th>
+//               <th>Phone Number</th>
+//               <th>Email</th>
+//               <th>Actions</th>
+//             </tr>
 
 export default Chart
