@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/factory_four_dashbord_status/static/css/main.efe3d3e1.css",
+    "main.js": "/factory_four_dashbord_status/static/js/main.9afd12ad.js",
+    "static/js/787.2a76dbb1.chunk.js": "/factory_four_dashbord_status/static/js/787.2a76dbb1.chunk.js",
+    "index.html": "/factory_four_dashbord_status/index.html",
+    "main.efe3d3e1.css.map": "/factory_four_dashbord_status/static/css/main.efe3d3e1.css.map",
+    "main.9afd12ad.js.map": "/factory_four_dashbord_status/static/js/main.9afd12ad.js.map",
+    "787.2a76dbb1.chunk.js.map": "/factory_four_dashbord_status/static/js/787.2a76dbb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efe3d3e1.css",
+    "static/js/main.9afd12ad.js"
+  ]
+}
