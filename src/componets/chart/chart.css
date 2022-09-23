@@ -1,81 +1,58 @@
-/* .chart-container {
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: white;
-    box-shadow: 4px 4px 4px gray;
-    border-radius: 5px;
-    padding: 25px;
-    margin: 20px;
-} */
-
 .chart-name {
     width: 90px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 16px;
-
-    /* padding: 15px;
-    margin: 10px; */
 }
 
 .chart-healthy {
     background-color: green;
     color: white;
-    /* width: 100px; */
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    /* padding: 5px;
-
-    margin: 10px;  */
-
+    font-size: 16px;
 }
 
 .chart-error {
     background-color: red;
     color: white;
-    /* width: 100px; */
+    font-size: 16px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    /* padding: 5px; */
-
 }
 
-/* .chart-healthy-time {
+.chart-healthy-time {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px;
     margin: 5px;
     text-align: center;
-    
-    padding: 15px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
 
-} */
+}
 
 .chart-error-time {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 18px;
-    /* padding: 5px;
-    margin: 5px; */
+    font-size: 16px;
     text-align: center;
+    padding: 5px;
+    margin: 5px;
 }
 
-/* .chart-healthy-hostname {
+.chart-healthy-hostname {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px;
     margin: 5px;
     text-align: center;
-} */
+}
 
 
 .chart-error-hostname {
@@ -83,7 +60,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 16px;
-    /* padding: 5px;
-    margin: 5px; */
     text-align: center;
+    padding: 5px;
+    margin: 5px;
 }
