@@ -9,7 +9,7 @@
     border-radius: 5px;
     padding: 25px;
     margin: 20px;
-}
+} */
 
 .chart-name {
     width: 90px;
@@ -17,35 +17,35 @@
     font-weight: lighter;
     font-size: 16px;
 
-    padding: 15px;
-    margin: 10px;
+    /* padding: 15px;
+    margin: 10px; */
 }
 
 .chart-healthy {
     background-color: green;
     color: white;
-    width: 100px;
+    /* width: 100px; */
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    padding: 5px;
+    /* padding: 5px;
 
-    margin: 10px; 
+    margin: 10px;  */
 
 }
 
 .chart-error {
     background-color: red;
     color: white;
-    width: 100px;
+    /* width: 100px; */
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    padding: 5px;
+    /* padding: 5px; */
 
 }
 
-.chart-healthy-time {
+/* .chart-healthy-time {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 18px;
@@ -56,34 +56,34 @@
     padding: 15px;
     margin: 10px;
 
-}
+} */
 
 .chart-error-time {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 18px;
-    padding: 5px;
-    margin: 5px;
+    /* padding: 5px;
+    margin: 5px; */
     text-align: center;
 }
 
-.chart-healthy-hostname {
+/* .chart-healthy-hostname {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 18px;
     padding: 5px;
     margin: 5px;
     text-align: center;
-}
+} */
 
 
 .chart-error-hostname {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 28px;
-    padding: 5px;
-    margin: 5px;
+    font-size: 16px;
+    /* padding: 5px;
+    margin: 5px; */
     text-align: center;
-} */
+}
