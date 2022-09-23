@@ -16,7 +16,7 @@ function Chart({request}) {
     return () => clearInterval(intervalId);
   }, [request]);
 
-  
+
   const data = async (value) => {
     await fetch(`https://api.factoryfour.com/${value}/health/status`)
       .then((res) => res.json())
@@ -26,7 +26,7 @@ function Chart({request}) {
 
   let calculateTime = (number) => {
     let time = new Date(number)
-    return time.toTimeString().split(" ")[0]
+    return time.toTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
   }
 
   let actualTime = calculateTime(apistate?.time)
@@ -37,8 +37,8 @@ function Chart({request}) {
       
       <h2 className='chart-name'>{request.toString().toUpperCase()}</h2>
       <h3 className={apistate?.success ? "chart-healthy" : "chart-error"}>{apistate?.success ? "Healthy" : "Error"}</h3>
-      <h4 className={apistate?.success ? "chart-healthy-hostname" : "chart-error-hostname"}>{apistate?.success ? apistate.hostname : "MAJOR OUTAGE"}</h4>
-      <h4 className={apistate?.success ? "chart-healthy-time" : "chart-error-time"}>{apistate?.success ? actualTime : "403 Forbidden"}</h4>
+      <h4 className={apistate?.success ? "chart-healthy-hostname" : "chart-error-hostname"}>{apistate?.success ? 'Host Name' + apistate.hostname : "MAJOR OUTAGE"}</h4>
+      <h4 className={apistate?.success ? "chart-healthy-time" : "chart-error-time"}>{apistate?.success ? 'Last Checked at ' + actualTime : "403 Forbidden"}</h4>
     </div>
   )   
 }

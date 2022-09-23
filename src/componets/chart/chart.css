@@ -47,6 +47,8 @@
     padding: 5px;
     margin: 5px;
     text-align: center;
+    /* letter-spacing: 7px; */
+
 }
 
 .chart-error-time {
